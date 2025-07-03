@@ -1,0 +1,109 @@
+.allAppointments {
+    width: 100%;          /* w-full */
+    max-width: 72rem;     /* max-w-6xl (72 * 16px = 1152px) */
+    margin: 1.25rem;
+}
+
+.all-p {
+    margin-bottom: 0.75rem;    /* mb-3 */
+    font-size: 1.125rem;       /* text-lg */
+    line-height: 1.75rem;      /* matches Tailwind's line-height for text-lg */
+    font-weight: 500;  
+}
+
+.all-div {
+    background-color: white;         /* bg-white */
+    border: 1px solid #d1d5db;       /* border, using Tailwind's default gray-300 */
+    border-radius: 0.25rem;          /* rounded = 4px */
+    font-size: 0.875rem;             /* text-sm = 14px */
+    line-height: 1.25rem;            /* line-height for text-sm */
+    max-height: 80vh;                /* max-h-[80vh] */
+    overflow-y: scroll;  
+}
+
+.all-div2 {
+    display: none;                       /* hidden by default */
+    padding: 0.75rem 1.5rem;             /* py-3 px-6 */
+    border-bottom: 1px solid #e5e7eb;    /* border-b with Tailwind's gray-200 */
+    grid-auto-flow: column;             /* grid-flow-col */
+    grid-template-columns: 0.5fr 3fr 1fr 3fr 3fr 1fr 1fr;
+  }
+  
+  /* Responsive grid at screen width ≥ 640px (Tailwind's sm) */
+  @media (min-width: 640px) {
+    .all-div2 {
+      display: grid;
+    }
+  }
+
+  .each-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b7280; /* text-gray-500 */
+    padding: 0.75rem 1.5rem; /* py-3 px-6 */
+    border-bottom: 1px solid #e5e7eb; /* border-b */
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover effect */
+  .each-item:hover {
+    background-color: #f9fafb; /* hover:bg-gray-50 */
+  }
+  
+  /* gap-2 only on max-sm screens */
+  @media (max-width: 639px) {
+    .each-item {
+      gap: 0.5rem; /* max-sm:gap-2 */
+    }
+  }
+  
+  /* Grid layout on sm and up */
+  @media (min-width: 640px) {
+    .each-item {
+      display: grid;
+      grid-template-columns: 0.5fr 3fr 1fr 3fr 3fr 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 639px) {
+    .each-item-p {
+      display: none;
+    }
+  }
+  
+
+  @media (max-width: 639px) {
+    .dob {
+      display: none;
+    }
+  }
+
+  .each-doc {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* or 8px */
+  }
+  
+  .each-doc-img {
+    width: 2rem;
+    height: 2rem;                  /* to make it a circle */
+    border-radius: 9999px;         /* rounded-full */
+    background-color: #e5e7eb;     /* Tailwind's gray-200 */
+  }
+
+  .cancelled {
+    color: #f87171;         /* text-red-400 */
+    font-size: 0.75rem;     /* text-xs */
+    line-height: 1rem;      /* line height for better readability */
+    font-weight: 500;       /* font-medium */
+  }
+  
+  .completed {
+    color: #22c55e;         /* text-green-500 */
+    font-size: 0.75rem;     /* text-xs = 12px */
+    line-height: 1rem;      /* matches Tailwind's default for text-xs */
+    font-weight: 500;       /* font-medium */
+  }
+  

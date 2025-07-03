@@ -1,0 +1,112 @@
+.form-p {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.form-adddoc{
+  background-color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 56rem;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.form-input {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-div1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: #6B7280;
+}
+
+.form-img {
+  width: 4rem;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.inp {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  padding : 0.5rem 0.75rem;
+}
+
+.small {
+    padding: 0.5rem 0.5rem
+}
+.form-btn {
+  background-color: #d9a300;   /* or your custom --primary color */
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  border-radius: 9999px;
+}
+
+.text-area {
+  width: 95%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+}
+
+
+.form-speciality {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .form-speciality {
+    flex: 1 1 0%;
+  }
+}
+
+
+.form-all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  color: #4B5563;
+}
+
+@media (min-width: 1024px) {
+  .form-all {
+    flex-direction: row;
+  }
+}
+
+.form-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .form-info {
+    flex: 1 1 0%;
+  }
+}

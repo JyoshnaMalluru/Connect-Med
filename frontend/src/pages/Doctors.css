@@ -1,0 +1,185 @@
+.topdoctors-card {
+    border: 1px solid #f3edda; /* border-blue-200 */
+    border-radius: 0.75rem; /* rounded-xl */
+    overflow: hidden; /* overflow-hidden */
+    cursor: pointer; /* cursor-pointer */
+    transition: all 0.5s;
+}
+.topdoctors-card:hover {
+    transform: translateY(-10px); /* hover:translate-y-[-10px] */
+}
+.card-img {
+    background-color: #f3edda;
+}
+.card-avail{
+    padding: 1rem;
+}
+.card-p {
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    gap: 0.5rem; /* gap-2 (8px) */
+    font-size: 0.875rem; /* text-sm (14px) */
+    text-align: center; /* text-center */
+    color: #22c55e;
+}
+.card-p2 {
+    width: 0.5rem; /* w-2 (8px) */
+    height: 0.5rem; /* h-2 (8px) */
+    background-color: #22c55e; /* bg-green-500 */
+    border-radius: 50%;
+}
+.card-title {
+    color: #1a202c; /* Text color for gray-900 */
+    font-size: 1.125rem; /* Font size for text-lg */
+    font-weight: 500;
+}
+.card-specific {
+    color: #1a202c;
+    font-size: 0.875rem;
+}
+.txt {
+    color: #4B5563;
+}
+.all-list {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 1.25rem; 
+    margin-top: 1.25rem; 
+ } 
+
+ @media (min-width: 640px) { 
+    .all-list {
+        flex-direction: row; 
+    }
+}  
+/* .doc-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1rem; 
+    row-gap: 1.5rem;
+} */
+ .doc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.topdoctors-card {
+  width: 250px;
+  min-height: 300px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.all-specialists {
+    /* display: flex; */
+    flex-direction: column; /* Stacks items vertically (flex-col) */
+    gap: 0.5rem;
+    font-size: 0.875rem; /* Font size for text-sm (14px) */
+    color: #4B5563; /* Text color for text-gray-600 */
+}
+.each-specialist {
+    width: 94vw; /* Custom width: 94% of the viewport width */
+    padding-left: 0.75rem; /* Padding left: 3 * 0.25rem */
+    padding-top: 0.375rem; /* Padding top: 1.5 * 0.25rem */
+    padding-bottom: 0.375rem; /* Padding bottom: 1.5 * 0.25rem */
+    padding-right: 4rem; /* Padding right: 16 * 0.25rem */
+    border: 1px solid #D1D5DB; /* Border with gray-300 color */
+    border-radius: 0.25rem; /* Rounded corners: 4px */
+    transition: all 0.2s ease-in-out; /* Smooth transition for all properties */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+    .each-specialist {
+        width: auto; /* Sets the width to auto for larger screens */
+    }
+}
+.general-physician,.gastroenterologist,.neurologist,.pediatricians,.dermatologist,.gynecologist {
+    background-color: #f3edda; /* bg-indigo-100 */
+    color: #000000; /* text-black */
+}
+
+.filter-btn1 {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: small;
+    transition: all;
+    background-color: #d9a300;
+    color: white;
+    border: none;
+}
+
+@media (min-width: 640px) {
+  .filter-btn1 {
+    display: none;
+  }
+}
+
+.filter-btn2 {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: small;
+    transition: all;
+    background-color: #f3edda;
+    border: 1px solid #f3edda;
+}
+
+@media (min-width: 640px) {
+  .filter-btn2 {
+    display: none;
+  }
+}
+.show {
+    display: block;
+}
+.hide {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .hide {
+    display: flex;
+  }
+}
+
+.card-p0 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: #22c55e;
+    height: 30%;
+}
+
+.card-p1 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: gray;
+    height: 30%;
+}
+
+.card-p2 {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #22c55e;
+    border-radius: 50%;
+}
+
+.card-p3 {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: gray; 
+    border-radius: 50%;
+}

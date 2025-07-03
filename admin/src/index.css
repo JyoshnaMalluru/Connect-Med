@@ -1,0 +1,7 @@
+*{
+    font-family: Outfit;
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}

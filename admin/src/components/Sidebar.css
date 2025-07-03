@@ -1,0 +1,59 @@
+.sidebar {
+  min-height: 100vh;        /* min-h-screen */
+  background-color: #ffffff; /* bg-white */
+  border-right: 1px solid #e5e7eb; /* border-r (default Tailwind border color is gray-200) */
+  min-width: 20vw;
+}
+
+.sidebar-items {
+  display: flex;                   /* flex */
+  align-items: center;            /* items-center */
+  gap: 0.75rem;                   /* gap-3 (3 * 0.25rem) */
+  padding-top: 0.875rem;          /* py-3.5 (3.5 * 0.25rem) */
+  padding-bottom: 0.875rem;
+  padding-left: 1.75rem;          /* px-3 (3 * 0.25rem) */
+  padding-right: 0.75rem;
+  cursor: pointer;                /* cursor-pointer */
+  color: #d9a300;
+}
+
+/* For medium and larger screens */
+@media (min-width: 768px) {
+  .sidebar-items {
+    padding-left: 2.25rem;        /* md:px-9 (9 * 0.25rem) */
+    padding-right: 2.25rem;
+    min-width: 5rem;             /* md:min-w-72 (72 * 0.25rem) */
+    color: #d9a300;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar-items {
+    padding-left: 0.5rem;        /* md:px-9 (9 * 0.25rem) */
+    
+  }
+}
+.active {
+  background-color: #F2F3FF;   /* bg-[#F2F3FF] */
+  border-right: 4px solid #d9a300 !important;  /* border-r-4 + border-primary (assuming default Tailwind 'primary' = indigo-500) */
+}
+
+.sidebar-img {
+  min-width: 1.25rem; /* Same as Tailwind's min-w-5 */
+}
+
+.side-items {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .side-items {
+    display: block;
+  }
+}
+
+ul {
+    color: #d9a300;
+    margin: 1.25rem 0rem 0rem 0rem;
+    padding-left: 0rem
+}
+

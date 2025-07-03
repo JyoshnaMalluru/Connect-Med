@@ -1,0 +1,146 @@
+/* Container */
+.topdoctors-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    color: #1f2937;
+}
+
+/* Heading */
+.topdoctors-heading {
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+/* Subtext */
+.topdoctors-para {
+    width: 33.3333%;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Grid Layout */
+.topdoctors-list {
+    width: 100%;
+    display: grid;
+    gap: 1.5rem;
+    /* row-gap: 1.5rem; */
+    padding : 1.25rem 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+@media (min-width: 640px) {
+    .topdoctors-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Card */
+.topdoctors-card {
+    border: 1px solid #f3edda;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s;
+    height: auto;
+    min-height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 0rem 0.5rem;
+    width: 100%;
+}
+
+.topdoctors-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Doctor Image */
+.card-img {
+    height: 65%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #f3edda;
+}
+
+/* Availability + Info Container */
+.card-avail {
+    height: 40%;
+    /* padding: 0.75rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 0.25rem; */
+    text-align: center;
+}
+
+/* Availability Indicator */
+.card-p0 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: #22c55e;
+    height: 30%;
+}
+
+.card-p1 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: gray;
+    height: 30%;
+}
+
+.card-p2 {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #22c55e;
+    border-radius: 50%;
+}
+
+.card-p3 {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: gray; 
+    border-radius: 50%;
+}
+
+/* Doctor Name */
+.card-title {
+    color: #1a202c;
+    font-size: 0.875rem;
+    font-weight: 600;
+    height: 40%;
+    margin: 0.2rem 0rem;
+}
+
+/* Doctor Speciality */
+.card-specific {
+    color: #1a202c;
+    font-size: 0.75rem;
+    height: 30%;
+}
+
+/* More Button */
+.more-btn {
+    background-color: #f3edda;
+    color: #4b5563;
+    padding: 0.75rem 3rem;
+    border-radius: 9999px;
+    margin-top: 2.5rem;
+    font-weight: 800;
+    transition: background-color 0.3s ease;
+    border : none;
+}
+
+.more-btn:hover {
+    background-color: #d9a300;
+    color: white;
+    border : none;
+}

@@ -1,0 +1,167 @@
+/* Main Container */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9a300; 
+  border-radius: 0.5rem;
+  padding: 0rem 1.5rem ;
+  height: auto; 
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row; /* md:flex-row */
+    padding: 0rem 2.5rem; /* md:px-10 */
+    height: 56vh; /* Set a consistent height for both sections */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    /* padding: 5rem/; lg:px-20 */
+    height: 85vh; /* Adjust height for larger screens */
+  }
+}
+
+/* Left Side */
+.header-left {
+  width: 100%; /* md:w-1/2 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* gap: 1rem; gap-4 */
+  /* padding:  0rem; py-10 */
+  /* margin: auto;  */
+  height: auto; /* Default height */
+}
+
+@media (min-width: 768px) {
+  .header-left {
+    height: 100%; /* Ensure it takes full height on larger screens */
+    /* padding: 10vw 0; md:py-[10vw] */
+    /* margin-bottom: -30px;  */
+  }
+}
+
+/* Right Side */
+.header-right {
+  width: 100%; /* md:w-1/2 */
+  position: relative; /* relative */
+  height: 100%; /* Default height */
+}
+
+@media (min-width: 768px) {
+  .header-right {
+    height: 100%; /* Ensure it matches the height of .header-left */
+    display: flex;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+}
+
+/* Title */
+.header-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600; /* font-semibold */
+  color: white; /* text-white */
+  line-height: 1.5; /* leading-tight */
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem; /* md:text-4xl */
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3rem; /* lg:text-5xl */
+  }
+}
+
+/* Info Section */
+.header-info {
+  display: flex;
+  flex-direction: column; /* md:flex-row */
+  /* align-items: center; */
+  gap: 0.75rem; /* gap-3 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 300; /* font-light */
+  color: white; /* text-white */
+}
+
+.profile-images {
+  width: 7rem; /* w-28 */
+}
+
+.hidden{
+  display: none; /* hidden */
+}
+
+@media (min-width: 640px) {
+  .hidden {
+    display: inline; /* sm:block */
+  }
+}
+
+/* Book Appointment Button */
+.book-appointment-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  background-color: white; /* bg-white */
+  padding: 0.75rem 2rem; /* px-8 py-3 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563; /* text-gray-600 */
+  margin: auto; /* m-auto */
+
+  @media (min-width: 768px) {
+    margin: 0; /* md:m-0 */
+  }
+
+  transition: all 0.3s ease; /* transition-all duration-300 */
+}
+
+.book-appointment-btn:hover {
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+/* Arrow Icon */
+.arrow-icon {
+  width: 0.75rem; /* w-3 */
+}
+
+/* Default (mobile) */
+.header-right {
+  position: relative;
+}
+
+/* Medium screen and above (768px and up) */
+@media (min-width: 768px) {
+  .header-right {
+    width: 80%; /* Equivalent to w-1/2 */
+  }
+}
+
+.header-image {
+  width: 100%;               /* w-full */
+  /* height: auto;               */
+  border-radius: 0.5rem;     /* rounded-lg = 8px */
+}
+
+@media (min-width: 768px) {
+  .header-image {
+    position: absolute;      /* md:absolute */
+    bottom: 0;               /* bottom-0 */
+  }
+}
+
+.hidden{
+  display: inline;
+}
+
+/* Hide the <br> element for small screens */
+@media (max-width: 640px) {
+  .hidden{
+    display: none;
+  }
+} 

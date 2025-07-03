@@ -1,0 +1,114 @@
+.appoint-head {
+    padding-bottom: 0.75rem;       /* pb-3 */
+    margin-top: 3rem;              /* mt-12 */
+    font-weight: 500;              /* font-medium */
+    color: #3f3f46;                /* text-zinc-700 */
+    border-bottom: 1px solid #e5e7eb;
+}
+.appoint-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Responsive: apply flex and larger gap on small screens (640px+) */
+@media (min-width: 640px) {
+  .appoint-card {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+.appoint-details {
+    flex: 1;
+    font-size: small;
+    color: #3f3f46;
+}
+
+.appoint-details p{
+    margin: 0.2rem;
+}
+.btns {
+    display: flex;            /* flex */
+    flex-direction: column;   /* flex-col */
+    gap: 0.5rem;              /* gap-2 = 8px */
+    justify-content: flex-end;
+}
+.each-btn {
+  font-size: 0.875rem;           /* text-sm (14px) */
+  line-height: 1.25rem;          /* 20px line height */
+  color: #78716c;                /* text-stone-500 */
+  text-align: center;            /* text-center */
+  padding-top: 0.5rem;           /* py-2 = 8px */
+  padding-bottom: 0.5rem;
+  border: 1px solid #e5e7eb;     /* border (default gray) */
+  border-radius: 0.25rem;        /* rounded = 4px */
+}
+
+/* Responsive: min-width at small screens (640px+) */
+@media (min-width: 640px) {
+  .each-btn {
+    min-width: 12rem;            /* sm:min-w-48 = 192px */
+  }
+}
+
+.each-btn:hover {
+    color: white;
+    background-color: #d9a300;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.btn-2:hover {
+    background-color: red;
+}
+
+.cancelled-btn {
+  padding-top: 0.5rem;      /* py-2 */
+  padding-bottom: 0.5rem;   /* py-2 */
+  border: 1px solid #f56565;  /* border-red-500 */
+  border-radius: 0.25rem;     /* rounded */
+  color: #f56565;           /* text-red-500 */
+}
+
+/* sm: variant: applies when the viewport width is 640px or more */
+@media (min-width: 640px) {
+  .cancelled-btn {
+    min-width: 12rem;       /* 12rem = 48 * 0.25rem = sm:min-w-48 */
+  }
+}
+
+.paid-btn {
+  padding-top: 0.5rem;      /* py-2 = 0.5rem top */
+  padding-bottom: 0.5rem;   /* py-2 = 0.5rem bottom */
+  border: 1px solid #d1d5db;  /* Tailwind default border color (gray-300) */
+  border-radius: 0.25rem;   /* rounded = 4px */
+  color: #78716c;           /* text-stone-500 */
+  background-color: #f3edda; /* bg-indigo-50 */
+  min-width: 12rem;         /* sm:min-w-48 (192px) applied by default */
+}
+
+/* Responsive: only apply min-width at small screens and up (≥640px) */
+@media (max-width: 639px) {
+  .paid-btn {
+    min-width: auto; /* remove the min-width on very small screens */
+  }
+}
+
+.complete {
+  padding-top: 0.5rem;     /* py-2 = 8px */
+  padding-bottom: 0.5rem;
+  border: 1px solid #22c55e;  /* border-green-500 */
+  border-radius: 0.25rem;     /* rounded */
+  color: #22c55e;             /* text-green-500 */
+}
+
+/* For small screens and up */
+@media (min-width: 640px) {
+  .complete {
+    min-width: 12rem; /* sm:min-w-48 = 192px */
+  }
+}

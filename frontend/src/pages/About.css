@@ -1,0 +1,109 @@
+.about-head {
+    text-align: center;        /* text-center */
+    font-size: 1.5rem;         /* text-2xl (24px) */
+    padding-top: 1rem;       
+    color: #6B7280;    
+}
+
+.about-span {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.about-des {
+  margin-top: 2.5rem;     /* my-10 = 2.5rem */
+  margin-bottom: 2.5rem;
+  display: flex;          /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 3rem;              /* gap-12 = 3rem */
+}
+
+@media (min-width: 768px) {
+  .about-des {
+    flex-direction: row;  /* md:flex-row */
+  }
+}
+
+.about-img {
+  width: 100%; /* w-full */
+}
+
+@media (min-width: 768px) {
+  .about-img {
+    max-width: 360px; /* md:max-w-[360px] */
+  }
+}
+.about-para {
+  display: flex;               /* flex */
+  flex-direction: column;      /* flex-col */
+  justify-content: center;     /* justify-center */
+  gap: 1rem;                 /* gap-6 = 1.5rem */
+  font-size: 0.875rem;         /* text-sm = 14px */
+  color: #4B5563;              /* text-gray-600 */
+}
+
+@media (min-width: 768px) {    /* md breakpoint */
+  .about-para {
+    width: 50%;                /* md:w-2/4 */
+  }
+}
+
+.about-b {
+  color: #1F2937;
+}
+.about-foot {
+  font-size: 1.25rem;   /* text-xl */
+  margin-top: 1rem;     /* my-4 = 1rem */
+  margin-bottom: 1rem;
+}
+
+.about-span2 {
+  color: #374151;        /* Tailwind's text-gray-700 */
+  font-weight: 600;      /* Tailwind's font-semibold */
+}
+
+.about-table {
+  display: flex;
+  flex-direction: column;   /* Default: column direction */
+  margin-bottom: 5rem;      /* mb-20 = 20 * 0.25rem = 5rem */
+}
+
+@media (min-width: 768px) {
+  .about-table{
+    flex-direction: row;    /* md:flex-row on medium screens and above */
+  }
+}
+
+.about-each {
+  border: 1px solid #d1d5db; /* Default Tailwind border color (gray-300) */
+  padding: 2rem 2.5rem; /* py-8 = 2rem, px-10 = 2.5rem */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* gap-5 = 1.25rem */
+  font-size: 15px;
+  color: #4b5563; /* text-gray-600 */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Medium screen (md) */
+@media (min-width: 768px) {
+  .about-each {
+    padding-left: 4rem; /* md:px-16 = 4rem */
+    padding-right: 4rem;
+  }
+}
+
+/* Small screen (sm) */
+@media (min-width: 640px) {
+  .about-each {
+    padding-top: 4rem; /* sm:py-16 = 4rem */
+    padding-bottom: 4rem;
+  }
+}
+
+/* Hover state */
+.about-each:hover {
+  background-color: #d9a300; /* Replace with your --primary color */
+  color: white;
+}

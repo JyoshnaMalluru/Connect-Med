@@ -1,0 +1,135 @@
+.doc-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;           /* gap-4 = 16px */
+  margin: 1.25rem;     /* m-5 = 20px */
+}
+
+@media (min-width: 768px) {
+  .doc-profile {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+ 
+.profile-img {
+  background-color: #d9a300;
+  width: 100%;
+  border-radius: 0.5rem;
+  max-width: 10rem; /* 👈 Reduce image size for small screens */
+}
+
+@media (min-width: 640px) {
+  .profile-img {
+    max-width: 16rem;
+  }
+}
+
+
+.doc-info {
+  flex: 1;
+  border: 1px solid #f5f5f4;   /* border-stone-100 */
+  border-radius: 0.5rem;       /* rounded-lg = 8px */
+  padding: 1.75rem 2rem;       /* py-7 = 28px (top/bottom), p-8 = 32px (left/right) */
+  background-color: #ffffff;   /* bg-white */
+  margin-top: -0.01rem;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+} 
+
+.doc-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;               /* gap-2 = 8px */
+  font-size: 1.875rem;       /* text-3xl = 30px */
+  font-weight: 500;          /* font-medium */
+  color: #374151;            /* text-gray-700 */
+}
+
+.doc-edu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;         /* gap-2 = 8px */
+  margin-top: 0.25rem; /* mt-1 = 4px */
+  color: #4b5563;      /* text-gray-600 */
+}
+
+.doc-exp {
+  padding: 0.125rem 0.5rem;   /* py-0.5 = 2px, px-2 = 8px */
+  border: 1px solid #d1d5db;  /* Default border color (gray-300) */
+  font-size: 0.75rem;         /* text-xs = 12px */
+  border-radius: 9999px;      /* fully rounded (pill shape) */
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;          /* gap-1 = 4px */
+  font-size: 0.875rem;   /* text-sm = 14px */
+  font-weight: 500;      /* font-medium */
+  color: #262626;
+  margin-top: 0.75rem;   /* mt-3 = 12px */
+}
+
+.doc-description {
+  font-size: 0.875rem;     /* text-sm */
+  color: #4b5563;          /* text-gray-600 */
+  /* max-width: 100%;
+  word-break: break-word;       max-w-[700px] */
+  margin-top: 0.25rem;     /* mt-1 = 4px */
+}
+
+.doc-fee {
+  color: #4b5563;       /* text-gray-600 */
+  font-weight: 500;     /* font-medium */
+  margin-top: 1rem;     /* mt-4 = 16px */
+}
+
+.doc-address {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 0.5rem;      /* gap-2 */
+  padding-top: 0.5rem;  /* py-2 = 0.5rem top & bottom */
+  padding-bottom: 0.5rem;
+}
+
+.doc-avail {
+  display: flex;
+  gap: 0.25rem;         /* gap-1 */
+  padding-top: 0.5rem;  /* pt-2 */
+}
+
+.btns {
+  padding: 0.25rem 1rem;       /* py-1 px-4 */
+  border: 1px solid #d9a300;   /* border-primary (adjust if your primary color differs) */
+  font-size: 0.875rem;         /* text-sm */
+  border-radius: 9999px;       /* rounded-full */
+  margin-top: 1.25rem;         /* mt-5 */
+  transition: all 0.2s ease;   /* transition-all */
+  color: #d9a300;              /* default text color */
+  background-color: white;     /* default background */
+  cursor: pointer;
+}
+
+.btns:hover {
+  background-color: #d9a300;   /* hover:bg-primary */
+  color: white;                /* hover:text-white */
+}
+
+.about-textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  outline-color: #3b82f6;
+  padding: 0.5rem;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 180px;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}

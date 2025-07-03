@@ -1,0 +1,75 @@
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem; /* py-3 px-4 */
+  border-bottom: 1px solid #e5e7eb; /* Tailwind's default border color */
+  background-color: white;
+}
+
+/* Responsive for small screens (640px and above) */
+@media (min-width: 640px) {
+  .admin-navbar {
+    padding-left: 2.5rem; /* sm:px-10 */
+    padding-right: 2.5rem;
+  }
+}
+
+
+.nav-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.nav-img {
+  width: 9rem;           /* 144px */
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .nav-img {
+    width: 10rem;        /* 160px */
+  }
+}
+
+
+.nav-p {
+  border: 1px solid #6b7280;
+  padding: 0.125rem 0.625rem; /* py-0.5 px-2.5 */
+  border-radius: 9999px;
+  color: #4b5563;
+  /* margin-top: 2rem; */
+}
+
+.nav-btn {
+  background-color: #d9a300;
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-logo {
+    font-size: 1.5rem; /* Default: text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #d9a300;
+    margin-bottom: 0rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-logo {
+        font-size: 1.875rem; /* md:text-3xl */
+        margin-bottom: 0rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-logo {
+        font-size: 2.25rem; /* lg:text-4xl */
+        margin-bottom: 0rem;
+    }
+}

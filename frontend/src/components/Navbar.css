@@ -1,0 +1,212 @@
+/* Container */
+.navbar-container {
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: space-between; /* justify-between */
+    font-size: 0.875rem; /* text-sm (0.875rem) */
+    padding-top: 1rem; 
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #9ca3af;
+    cursor: pointer;
+}
+
+/* Logo */
+.navbar-logo {
+    font-size: 1.5rem; /* Default: text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #d9a300;
+}
+
+@media (min-width: 768px) {
+    .navbar-logo {
+        font-size: 1.875rem; /* md:text-3xl */
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-logo {
+        font-size: 2.25rem; /* lg:text-4xl */
+    }
+}
+
+/* Links */
+.navbar-links {
+    display: none; /* hidden */
+    gap: 1.25rem; /* gap-5 */
+    font-weight: 500; /* font-medium */
+}
+
+@media (min-width: 768px) {
+    .navbar-links {
+        display: flex; /* md:flex */
+        align-items: flex-start; /* items-start */
+    }
+}
+
+.nav-item {
+    padding-top: 0.25rem; /* py-1 */
+    padding-bottom: 0.25rem;
+    list-style-type: none;
+    /* text-decoration: none; */
+    color: black;
+    font-size: medium;
+}
+
+.nav-highlight {
+    display: none; 
+    height: 0.1rem; /* h-0.5 */
+    background-color: #d9a300; /* bg-primary */
+    width: 60%; /* w-3/5 */
+    margin: auto;
+}
+
+.active hr {
+    display: block;
+}
+
+/* Profile */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* gap-4 */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 2rem; /* w-8 */
+    border-radius: 50%; /* rounded-full */
+}
+
+.dropdown-icon {
+    width: 0.625rem; /* w-2.5 */
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 3.5rem; /* pt-14 */
+    right: 0;
+    z-index: 20;
+    display: none;
+}
+
+.profile-container:hover .profile-dropdown {
+    display: flex;
+}
+
+.dropdown-menu {
+    min-width: 12rem; /* min-w-48 */
+    background-color: #f5f5f5; /* bg-stone-100 */
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    font-size: 1rem; /* text-base */
+    font-weight: 500; /* font-medium */
+    color: #4b5563; /* text-gray-600 */
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    color: black; /* hover:text-black */
+}
+
+/* Create Account Button */
+.create-account-btn {
+    background-color: #d9a300;;
+    color: white;
+    padding: 0.75rem 2rem; /* px-8 py-3 */
+    border-radius: 9999px; /* rounded-full */
+    font-weight: 400; /* font-light */
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .create-account-btn {
+        display: block; /* md:block */
+    }
+}
+
+.small-view {
+  width: 1.5rem; /* w-6 = 24px */
+}
+
+/* Responsive: hide on medium screens and up (≥768px) */
+@media (min-width: 768px) {
+  .small-view {
+    display: none;
+  }
+}
+
+
+.nav-open {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-closed {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Responsive: hide on md and larger screens */
+@media (min-width: 768px) {
+  .nav-open,
+  .nav-closed {
+    display: none;
+  }
+}
+
+.mobile-nav {
+    display: flex;                 /* flex */
+    align-items: center;           /* items-center */
+    justify-content: space-between;
+    padding-left: 1.25rem;         /* px-5 = 20px */
+    padding-right: 1.25rem;
+    /* padding-top: 1.5rem;           py-6 = 24px */
+    padding-bottom: 1.5rem;
+}
+.nav-items {
+    display: flex;                
+    flex-direction: column;       
+    align-items: center;          
+    gap: 0.5rem;                  
+    margin-top: 1.25rem;          
+    padding-left: 1.25rem;        
+    padding-right: 1.25rem;
+    font-size: 1.125rem;         
+    line-height: 1.75rem;  
+    width: 100%;       
+}
+
+.nav-links {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;   
+  display: inline-block; 
+}
+
+@media (max-width: 740px) {
+  .active p {
+    transition: all;
+    color: white; /* example if bg-primary is undefined */
+    background-color: #d9a300;
+  }
+}

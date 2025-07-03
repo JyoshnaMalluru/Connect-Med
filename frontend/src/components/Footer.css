@@ -1,0 +1,71 @@
+.footer{
+  margin-top: 3rem;
+}
+.logo {
+    font-size: 1.5rem; /* Default: text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #d9a300;
+    margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+    /* width: 13rem; */
+}
+@media (min-width: 768px) { /* For screens >= md breakpoint */
+    .footer{
+      margin-left: 2.5rem; /* Equivalent to md:mx-10 */
+      margin-right: 2.5rem;
+    }
+  }
+  .left {
+    display: flex; /* Equivalent to flex */
+    flex-direction: column; /* Equivalent to flex-col */
+    margin-top: 10rem; /* Equivalent to mt-40 */
+    margin-bottom: 2.5rem; /* Equivalent to my-10 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    gap: 0; /* Default gap value to avoid conflicts */
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 640px) { /* For screens >= sm breakpoint */
+    .left {
+      display: grid; /* Equivalent to sm:grid */
+      grid-template-columns: 3fr 1fr 1fr; /* Equivalent to grid-cols-[3fr_1fr_1fr] */
+      gap: 3.5rem; /* Equivalent to gap-14 */
+    }
+  }
+  
+  .left-info {
+    width: 100%; /* Equivalent to w-full */
+    color: #4b5563; /* Equivalent to text-gray-600 */
+    line-height: 1.5; /* Equivalent to leading-6 */
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 768px) { /* For screens >= md breakpoint */
+    .left-info {
+      width: 66.666667%; /* Equivalent to md:w-2/3 */
+    }
+  }
+  .center {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 500; /* Equivalent to font-medium */
+    margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+  }
+  .center-list {
+    display: flex; /* Equivalent to flex */
+    flex-direction: column; /* Equivalent to flex-col */
+    gap: 0.5rem; /* Equivalent to gap-2 */
+    color: #4b5563; /* Equivalent to text-gray-600 */
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .copyright {
+    padding-top: 1.25rem; /* Equivalent to py-5 */
+    padding-bottom: 1.25rem;
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    text-align: center; /* Equivalent to text-center */
+    justify-content: center;
+    align-self: center;
+  }
+ .left {
+   margin: 0rem;
+ }

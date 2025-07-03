@@ -1,0 +1,77 @@
+.contact {
+  text-align: center;
+  font-size: 1.5rem;       /* Equivalent to Tailwind's text-2xl */
+  padding-top: 1.5rem;     /* Equivalent to Tailwind's pt-10 */
+  color: #6B7280;          /* Equivalent to Tailwind's text-gray-500 */
+}
+
+.contact-span {
+  color: #374151;        /* text-gray-700 */
+  font-weight: 600;      /* font-semibold */
+}
+
+.contact-info {
+  margin-top: 2.5rem;         /* my-10 */
+  margin-bottom: 7rem;        /* mb-28 overrides my-10's mb */
+  display: flex  !important;
+  flex-direction: row;     /* flex-col */
+  justify-content: center;    /* justify-center */
+  gap: 2.5rem;                /* gap-10 */
+  font-size: 0.875rem;        /* text-sm */
+}
+
+/* Responsive (for md and up) */
+@media (min-width: 768px) {
+  .contact-info {
+    flex-direction: row;      /* md:flex-row */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column !important;      /* md:flex-row */
+  }
+}
+
+.contact-img {
+  width: 100%;
+}
+
+/* Responsive (for md and up) */
+@media (min-width: 768px) {
+  .contact-img {
+    max-width: 360px;
+  }
+}
+
+.contact-para {
+  display: flex;               /* flex */
+  flex-direction: column;      /* flex-col */
+  justify-content: center;     /* justify-center */
+  align-items: flex-start;     /* items-start */
+  gap: 0.1rem;                 
+}
+
+.contact-head {
+  font-weight: 600;         /* font-semibold */
+  font-size: 1.125rem;      /* text-lg = 18px */
+  color: #4B5563;           /* text-gray-600 */
+}
+.contact-d {
+  color: #6B7280; /* Tailwind's gray-500 */
+}
+
+.contact-btn {
+  margin: 1rem 1rem 0rem 0rem;
+  border: 1px solid #000000;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  color: inherit;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.contact-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

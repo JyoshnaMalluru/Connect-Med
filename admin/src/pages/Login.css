@@ -1,0 +1,60 @@
+.login-form {
+  min-height: 80vh;        /* Same as min-h-[80vh] */
+  display: flex;           /* Same as flex */
+  align-items: center;     /* Same as items-center */
+}
+
+.form-div {
+  display: flex;                 /* flex */
+  flex-direction: column;        /* flex-col */
+  gap: 0.75rem;                  /* gap-3 = 12px = 0.75rem */
+  margin: auto;                  /* m-auto */
+  align-items: flex-start;       /* items-start */
+  padding: 2rem;                 /* p-8 = 32px */
+  min-width: 340px;              /* min-w-[340px] */
+
+  border: 1px solid #e5e7eb;     /* border (using Tailwind default light gray) */
+  border-radius: 0.75rem;        /* rounded-xl = 12px */
+  color: #5E5E5E;                /* text-[#5E5E5E] */
+  font-size: 0.875rem;           /* text-sm = 14px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -4px rgba(0, 0, 0, 0.1);  /* shadow-lg */
+}
+
+/* Responsive rule for sm:min-w-96 (384px) */
+@media (min-width: 640px) {
+  .form-div {
+    min-width: 384px;
+  }
+}
+
+.form-txt {
+  font-size: 1.5rem;      /* text-2xl = 24px = 1.5rem */
+  font-weight: 600;       /* font-semibold */
+  margin: auto;           /* m-auto */
+}
+
+.form-inp {
+  border: 1px solid #DADADA; /* border + custom color */
+  border-radius: 0.25rem;    /* rounded = 4px */
+  width: 95%;               /* w-full */
+  padding: 0.5rem;           /* p-2 = 8px */
+  margin-top: 0.25rem;       /* mt-1 = 4px */
+}
+
+.form-btn {
+  background-color: #d9a300; /* Replace --primary with actual color code if not using CSS variables */
+  color: white;                     /* text-white */
+  width: 100%;                      /* w-full */
+  padding-top: 0.5rem;              /* py-2 = 8px */
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;          /* rounded-md = 6px */
+  font-size: 1rem;         
+  border: none;         /* text-base = 16px */
+}
+
+.form-link {
+  color: #d9a300;   /* Replace with actual color like #3B82F6 if not using variables */
+  text-decoration: underline;
+  cursor: pointer;
+}

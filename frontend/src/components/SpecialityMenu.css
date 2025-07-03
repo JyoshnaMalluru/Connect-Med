@@ -1,0 +1,59 @@
+.speciality-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 0;
+    color: #4b5563; 
+  }
+  
+  .speciality-menu-title {
+    font-size: 1.875rem; /* Tailwind's text-3xl */
+    font-weight: 500;
+  }
+  
+  .speciality-menu-description {
+    width: 33%;
+    text-align: center;
+    font-size: 0.875rem; /* Tailwind's text-sm */
+  }
+  
+  .speciality-menu-items {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1.25rem; /* Tailwind's pt-5 */
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: center;
+  }
+  
+  .speciality-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px; /* Corresponds to text-xs in Tailwind */
+    cursor: pointer; /* Pointer cursor on hover */
+    flex-shrink: 0; /* Prevent shrinking */
+    transition: transform 0.5s ease;
+  }
+  .speciality-menu-item:hover{
+    transform: translateY(-10px); 
+  }
+  .speciality-menu-image {
+    width: 64px; /* Default width for smaller screens (16 in Tailwind) */
+    margin-bottom: 8px; 
+    height: auto;
+  }
+  @media (min-width: 640px) { /* Small breakpoint in Tailwind (sm) */
+    .speciality-menu-image  {
+      width: 96px; /* Adjust width for screens >= 640px (24 in Tailwind) */
+    }
+  }
+  
+  .speciality-menu-label {
+    margin-top: 0.5rem;
+    font-size: 0.875rem; /* Tailwind's text-sm */
+  }
+  
