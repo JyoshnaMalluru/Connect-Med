@@ -61,6 +61,12 @@ const AppContextProvider =(props) =>{
         if (token) {
             loadUserProfileData()
         }
+        // if (token) {
+        //     axios.defaults.headers.common['token'] = token;
+        //     loadUserProfileData()
+        // } else {
+        //     delete axios.defaults.headers.common['token'];
+        // }
     }, [token])
 
     const value={
